@@ -1,0 +1,621 @@
+@font-face {
+  font-family: 'bauexportregular';
+  src: url("../font/bauexport-webfont.eot");
+  src: url("../font/bauexport-webfont.eot?#iefix") format("embedded-opentype"), url("../font/bauexport-webfont.woff") format("woff"), url("../font/bauexport-webfont.ttf") format("truetype"), url("../font/bauexport-webfont.svg#bauexportregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Import all the variables into the main css file.
+@import "variables";
+
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+// @import "bootstrap-responsive";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+// - - - - - - - - - - - - - – Sass Mixins - - - - - - - - - - - - - - - - //
+
+@mixin sprite {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+@mixin sprite-after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin sprite-hover {
+  opacity: 1;
+}
+
+// - - - - - - - - - - - - - – Global Styles - - - - - - - - - - - - - - - //
+
+* { outline: 0; }
+
+// Header
+
+// Nav
+
+nav {
+  margin-top: 10px;
+  .social {
+    margin-right: 0px;
+    position: relative;
+    top: -6px;
+  }
+  li {
+    margin-right: 10px;
+    text-transform: uppercase;
+    a {
+      color: $gray;
+      @include transition(all 0.2s ease-in-out);
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+        @include transition(all 0.2s ease-in-out);
+      }
+    }
+  }
+}
+
+a { color: $blue; @include transition(all 0.2s ease-in-out);
+
+&:hover {color: $green; text-decoration: none; @include transition(all 0.2s ease-in-out);}
+
+ }
+
+
+      //  Twitter icon in nav with sprite hover fade – checkout mixins
+      li.twitter a {
+        @include sprite;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/twitter.svg"), none;
+        &:after {
+          @include sprite-after;
+          background-position: 0px -30px;
+          background-image: url("../img/twitter.svg"), none;
+        }
+        &:hover:after {
+          @include sprite-hover;
+        }
+      }
+
+
+
+
+      li.linkedin a {
+        @include sprite;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/linkedin.svg"), none;
+        &:after {
+          @include sprite-after;
+          background-position: 0px -30px;
+          background-image: url("../img/linkedin.svg"), none;
+        }
+        &:hover:after {
+          @include sprite-hover;
+        }
+      }
+
+
+// Logo
+
+.logo {
+  background-image: url("../img/low-res/logo.png");
+  background-image: url("../img/logo.svg"), none;
+  width: 140px;
+  height: 30px;
+  text-indent: 3000px;
+  overflow: hidden;
+}
+
+// Sections
+
+// Content
+
+// Footer
+
+footer {
+  margin-top: 150px;
+  color: $gray;
+}
+
+// Spacing
+
+header {
+  margin-top: 80px;
+}
+
+.news {
+  margin-top: 80px;
+  h4 {
+    margin-top: 7px;
+  }
+  h3 {
+    margin-top: 7px;
+  }
+}
+
+section {
+  &.welcome {
+    p {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+  &.slider {
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  &.sector {
+    margin-bottom: 60px;
+  }
+  &.services {
+    margin-bottom: 60px;
+  }
+}
+
+.news-item {
+  padding-top: 12px;
+  margin-bottom: 30px;
+  p {
+    margin-top: 10px;
+  }
+}
+
+h2, h3 {
+  margin-top: 0px;
+}
+
+.profile-row {
+  margin-top: 12px;
+  margin-bottom: 60px;
+  img {
+    padding: 18px 0px 18px 0px;
+  }
+}
+
+// - - - - - - - - - - - - - – – Page specific - - - - - - - - - - - - - - - //
+
+// About
+
+.about-info {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-right: 20px;
+  }
+}
+
+.clients {
+  @extend .about-info;
+  blockquote {
+    border: 0px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+// clients
+
+.sectors {
+  margin-top: 0px;
+  li {
+    border-bottom: solid 1px $blue;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    font-size: 22px;
+  }
+}
+
+.market {
+  p {
+    margin-top: 180px;
+  }
+}
+
+// services
+
+.initials {
+  margin-top: 20px;
+  width: 52px;
+  height: 52px;
+  background-color: $gray;
+  color: #fff !important;
+
+font-size: 22px;
+
+font-weight: lighter;
+
+  @include border-radius(52px);
+  p {
+    text-align: center;
+    vertical-align: middle;
+    color: white !important;
+    position: relative;
+    top: 28%;
+    left: 18%;
+    font-family: 'bauexportregular';
+    font-weight: normal;
+letter-spacing: -0.5px;
+
+ -webkit-font-smoothing: antialiased;
+  }
+}
+
+.mp p, .st p {
+margin-left: -2px;
+
+}
+
+
+.graphic {
+  margin-top: 60px;
+}
+
+// - - - - - - - - - - - - - – – Typography - - - - - - - - - - - - - - - //
+
+// Headers
+
+h1, h2, h3, .bold {
+  font-family: 'bauexportregular';
+  -webkit-font-smoothing: antialiased;
+  font-weight: weight;
+  text-transform: lowercase;
+}
+
+
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+footer {
+  p {
+    font-size: 13px;
+  }
+}
+
+// Paragraph
+
+.welcome {
+  p.lead {
+    font-family: $headingsFontFamily;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+  }
+}
+
+// .lead {font-size: 20px;}
+
+p {
+  font-family: $sansFontFamily;
+  letter-spacing: 0.1em;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.large-type {
+  font-size: 32px;
+  line-height: 38px;
+  padding-bottom: 12px;
+}
+
+// Lists
+
+ul {
+  margin-left: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+// Links
+
+// Hoverstaets
+
+aside.tips {
+  p.lead {
+    font-size: 18px;
+    color: $blue;
+    margin-top: 30px;
+  }
+}
+
+// - - - - - - - - - - - - - – - Colors - - - - - - - - - - - - - - - - - //
+
+h2 {
+  color: $gray;
+}
+
+h3 {
+  color: $blue;
+}
+
+.date {
+  color: $green;
+}
+
+.welcome {
+  p.lead {
+    color: $blue;
+  }
+}
+
+// - - - - - - - - - - - - - – – Misc - - - - - - - - - - - - - - - - - //
+
+// Borders
+
+// .section-title {
+//   border-top: solid 3px $blue;
+// }
+
+hr.blue {
+  border-top: solid 1px $blue;
+  display: block;
+  height: 1px;
+  margin-bottom: 8px;
+}
+
+hr.blue-dashed {
+  border-top: dashed 1px $blue;
+  display: block;
+  height: 1px;
+  margin-bottom: 8px;
+}
+
+.border-top {
+  border-top: solid 1px $blue;
+  margin-left: 30px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.border-bottom {
+  border-bottom: solid 1px $blue;
+}
+
+.border-top-2 {
+  border-top: solid 2px $blue;
+  padding-top: 12px;
+}
+
+// Buttons
+
+.button {
+  cursor: pointer;
+}
+
+button {
+  background-color: $blue;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  @include border-radius(10px);
+
+  @include transition(all 0.2s ease-in-out);
+
+&:hover {
+
+background-color: $green;
+
+  @include transition(all 0.2s ease-in-out);
+
+}
+
+}
+
+// Overlay
+
+.privacy_open {
+  &:hover {
+    color: $green;
+  }
+}
+
+.open {
+  cursor: pointer;
+}
+
+.overlay {
+  h2 {
+    color: $white;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-weight: normal;
+  }
+  p.small {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  li {
+    line-height: 32px;
+  }
+}
+
+.close {
+  background-image: url("../img/low-res/close.png");
+  background-image: url("../img/close.svg"), none;
+  width: 30px;
+  height: 30px;
+  text-indent: 3000px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 1;
+  margin-top: 118px;
+  margin-left: 150px;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.fullscreen_show {
+  position: fixed;
+  display: none;
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.fullscreen_show_blue {
+  background: rgba(37, 181, 233, 0.9);
+}
+
+.fullscreen_show_green {
+  background: rgba(139, 197, 63, 0.9);
+}
+
+.clients {
+  display: block;
+  @include transition(all 0.2s ease-in-out);
+  &:hover {
+
+.arrow:after {
+      @include sprite-after;
+      background-position: 0px -32px;
+      background-image: url("../img/low-res/arrow.png");
+      background-image: url("../img/arrow.svg"), none;
+    }
+    .arrow:after {
+      @include sprite-hover;
+    }
+
+    @include transition(all 0.2s ease-in-out);
+    h3, p, .client-title {
+      color: $blue;
+      @include transition(all 0.2s ease-in-out);
+    }
+    .bold {
+      color: $black;
+    }
+    .initials {
+      background-color: $blue;
+      @include transition(all 0.2s ease-in-out);
+    }
+    p.services {
+      color: $black;
+      @include transition(all 0.2s ease-in-out);
+    }
+  }
+  h3, p, .client-title, .bold {
+    color: $gray;
+    @include transition(all 0.2s ease-in-out);
+  }
+
+
+
+}
+
+
+  .arrow {
+    @include sprite;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/low-res/arrow.png");
+    background-image: url("../img/arrow.svg"), none;
+    overflow: hidden; 
+  }
+
+
+
+// Icons & Images
+
+.icon {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+// - - - - - - - - - - - - - – - Slider - - - - - - - - - - - - - - - - - //
+
+.slider {
+  height: 350px;
+}
+
+// - - - - - - - - - - - - – Fixes/Classes - - - - - - - - - - - - - - - //
+
+// Classes to add styles
+
+.block {
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+  float: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.green {
+  color: $green;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.span3-300 {
+  width: 300px;
+}
+
+.gray {
+  color: $gray;
+}
+
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: $white;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.name, .title { text-transform:capitalize;}
+
+.client-title, .testimonial {text-transform: none;  margin-top: 10px; }
+
+.title-strong { font-weight: bold; letter-spacing: 0px; margin-bottom: 3px;}
+.sub-text { font-size: 11px; text-transform: uppercase; letter-spacing: 0; line-height: 14px; }
+
+
+.sectors {
+margin-top: 100px;
+}
+
+.overlay a {color:$white; }
+.overlay a:hover {color: $blueDark; }
+
+
