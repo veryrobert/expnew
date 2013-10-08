@@ -11,8 +11,8 @@
 			<div class="rsContent">
 				<div class="bContainer row">
 					<div class="rsABlock span12">
-						<div class="row">
-							<div class="span3-300" data-move-effect="none">
+						<div class="row" >
+							<div class="span3-300" >
 								<h3 class="large-type green"><?php the_sub_field('slider_title'); ?></h3>
 								<p class="lead" >
 									<?php the_sub_field('slider_text'); ?>

@@ -28,11 +28,11 @@
 jQuery(document).ready(function($) {
   jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
   $('#slider-with-blocks-1').royalSlider({
-    arrowsNav: true,
+    arrowsNav: false,
     arrowsNavAutoHide: false,
-    fadeinLoadedSlide: true,
+    fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
-    controlNavigation: 'bullets',
+    controlNavigation: 'none',
     imageScaleMode: 'none',
     imageAlignCenter:false,
     blockLoop: true,
@@ -40,12 +40,18 @@ jQuery(document).ready(function($) {
     numImagesToPreload: 6,
     transitionType: 'fade',
     keyboardNavEnabled: true,
+
    autoPlay: {
         // autoplay options go gere
         enabled: true,
         pauseOnHover: false,
-        delay:3000,
-      }
+        delay:5000,
+      },
+           block: {
+            // animated blocks options go gere
+            fadeEffect: true,
+            moveEffect: 'none'
+        }
   });
 });
 
