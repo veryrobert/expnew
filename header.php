@@ -14,6 +14,8 @@
         
         <script src="<?php bloginfo('template_url'); ?>js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     
+    <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico" />
+
 
 </head>
 <body data-grid-framework="bo" data-grid-color="pink" data-grid-opacity="0.2" data-grid-zindex="10" data-grid-nbcols="12">
