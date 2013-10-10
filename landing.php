@@ -15,8 +15,8 @@ Template Name: home Page
 
 	<div class="span12 section-title border-top-2">
 		<div class="row">
-			<h2 class="span6"><?php the_field('slider_title'); ?></h2>
-			<a class="span3 pull-right bold read-mor align-right" href="<?php the_field('page_link'); ?>">
+			<h2 class="span7"><?php the_field('slider_title'); ?></h2>
+			<a class="span4 pull-right bold read-more align-right" href="<?php the_field('page_link'); ?>">
 				<?php the_field('link_message'); ?>
 			</a>
 		</div>
