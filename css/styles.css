@@ -7274,9 +7274,10 @@ button:hover {
 /* line 483, ../sass/styles.scss */
 .overlay li {
   line-height: 32px;
+  color: white;
 }
 
-/* line 488, ../sass/styles.scss */
+/* line 489, ../sass/styles.scss */
 .close {
   background-image: url("../img/low-res/close.png");
   background-image: url("../img/close.svg"), none;
@@ -7289,12 +7290,12 @@ button:hover {
   margin-top: 118px;
   margin-left: 150px;
 }
-/* line 499, ../sass/styles.scss */
+/* line 500, ../sass/styles.scss */
 .close:hover {
   opacity: 0.5;
 }
 
-/* line 504, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 .fullscreen_show {
   position: fixed;
   display: none;
@@ -7303,19 +7304,20 @@ button:hover {
   bottom: 0;
   right: 0;
   left: 0;
+  color: white;
 }
 
-/* line 514, ../sass/styles.scss */
+/* line 516, ../sass/styles.scss */
 .fullscreen_show_blue {
   background: rgba(37, 181, 233, 0.9);
 }
 
-/* line 518, ../sass/styles.scss */
+/* line 520, ../sass/styles.scss */
 .fullscreen_show_green {
   background: rgba(139, 197, 63, 0.9);
 }
 
-/* line 522, ../sass/styles.scss */
+/* line 524, ../sass/styles.scss */
 .clients {
   display: block;
   -webkit-transition: all 0.2s ease-in-out;
@@ -7323,7 +7325,7 @@ button:hover {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 527, ../sass/styles.scss */
+/* line 529, ../sass/styles.scss */
 .clients .arrow:after {
   content: "";
   position: absolute;
@@ -7340,33 +7342,33 @@ button:hover {
   background-image: url("../img/low-res/arrow.png");
   background-image: url("../img/arrow.svg"), none;
 }
-/* line 533, ../sass/styles.scss */
+/* line 535, ../sass/styles.scss */
 .clients .arrow:after {
   opacity: 1;
 }
-/* line 537, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 .clients h3, .clients p, .clients .client-title {
   color: #27b4e8;
 }
-/* line 540, ../sass/styles.scss */
+/* line 542, ../sass/styles.scss */
 .clients .bold {
   color: black;
 }
-/* line 543, ../sass/styles.scss */
+/* line 545, ../sass/styles.scss */
 .clients .initials {
   background-color: #27b4e8;
 }
-/* line 547, ../sass/styles.scss */
+/* line 549, ../sass/styles.scss */
 .clients p.services {
   color: black;
 }
 
-/* line 552, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 h3, .client-title, .bold {
   color: #27b4e8;
 }
 
-/* line 562, ../sass/styles.scss */
+/* line 564, ../sass/styles.scss */
 .arrow {
   display: inline-block;
   position: relative;
@@ -7379,87 +7381,87 @@ h3, .client-title, .bold {
   overflow: hidden;
 }
 
-/* line 576, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .icon {
   margin-right: 10px;
   margin-top: 3px;
 }
 
-/* line 583, ../sass/styles.scss */
+/* line 585, ../sass/styles.scss */
 .slider {
   height: 350px;
 }
 
-/* line 591, ../sass/styles.scss */
+/* line 593, ../sass/styles.scss */
 .block {
   display: block;
 }
 
-/* line 595, ../sass/styles.scss */
+/* line 597, ../sass/styles.scss */
 .clearfix {
   clear: both;
   float: left;
 }
 
-/* line 600, ../sass/styles.scss */
+/* line 602, ../sass/styles.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 604, ../sass/styles.scss */
+/* line 606, ../sass/styles.scss */
 .green {
   color: #8bc541;
 }
 
-/* line 608, ../sass/styles.scss */
+/* line 610, ../sass/styles.scss */
 .point {
   cursor: pointer;
 }
 
-/* line 612, ../sass/styles.scss */
+/* line 614, ../sass/styles.scss */
 .span3-300 {
   width: 300px;
 }
 
-/* line 616, ../sass/styles.scss */
+/* line 618, ../sass/styles.scss */
 .gray {
   color: #b7b7b7;
 }
 
-/* line 620, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 .blue {
   color: #27b4e8;
 }
 
-/* line 624, ../sass/styles.scss */
+/* line 626, ../sass/styles.scss */
 .white {
   color: white;
 }
 
-/* line 628, ../sass/styles.scss */
+/* line 630, ../sass/styles.scss */
 .margin-left-30 {
   margin-left: 30px;
 }
 
-/* line 632, ../sass/styles.scss */
+/* line 634, ../sass/styles.scss */
 .name, .title {
   text-transform: capitalize;
 }
 
-/* line 634, ../sass/styles.scss */
+/* line 636, ../sass/styles.scss */
 .client-title, .testimonial {
   text-transform: none;
   margin-top: 10px;
 }
 
-/* line 636, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 .title-strong {
   font-weight: bold;
   letter-spacing: 0px;
   margin-bottom: 3px;
 }
 
-/* line 637, ../sass/styles.scss */
+/* line 639, ../sass/styles.scss */
 .sub-text {
   font-size: 11px;
   text-transform: uppercase;
@@ -7467,32 +7469,32 @@ h3, .client-title, .bold {
   line-height: 14px;
 }
 
-/* line 640, ../sass/styles.scss */
+/* line 642, ../sass/styles.scss */
 .sectors {
   margin-top: 60px;
 }
 
-/* line 644, ../sass/styles.scss */
+/* line 646, ../sass/styles.scss */
 .overlay a {
   color: white;
 }
 
-/* line 645, ../sass/styles.scss */
+/* line 647, ../sass/styles.scss */
 .overlay a:hover {
   color: #007999;
 }
 
-/* line 648, ../sass/styles.scss */
+/* line 650, ../sass/styles.scss */
 .clients-height {
   min-height: 450px;
 }
 
-/* line 652, ../sass/styles.scss */
+/* line 654, ../sass/styles.scss */
 .black {
   color: #000;
 }
 
-/* line 656, ../sass/styles.scss */
+/* line 658, ../sass/styles.scss */
 .read-more {
   font-size: 15px;
   letter-spacing: 0.5px;
