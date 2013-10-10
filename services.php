@@ -34,7 +34,8 @@ Template Name:  Services Page
 <?php if(get_field('services')): ?>
 <?php while(has_sub_field('services')): ?>		
 
-	<div class="clients span3 border-top">
+
+	<div class="clients clients-height span3 border-top">
 		<div class="initials <?php the_sub_field('initials'); ?>"><p><?php the_sub_field('initials'); ?></p></div>
 		<h3><?php the_sub_field('service_title'); ?> </h3>
 		<p class="services">
@@ -53,7 +54,7 @@ Template Name:  Services Page
 
 <section class="row">
 	<h2 class="span3">the benefits</h2>
-	<p class="lead span9">
+	<p class="lead span9 black">
 		<?php the_field('benefits'); ?>
 	</p>
 
