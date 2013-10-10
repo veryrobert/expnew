@@ -10,6 +10,8 @@
 // Import all the variables into the main css file.
 @import "variables";
 
+
+
 // I gather this file is a starting point for the project.
 @import "bootstrap";
 
@@ -18,6 +20,9 @@
 
 @import "compass/css3/border-radius";
 @import "compass/css3/transition";
+
+
+
 
 // - - - - - - - - - - - - - – Sass Mixins - - - - - - - - - - - - - - - - //
 
@@ -42,9 +47,18 @@
   opacity: 1;
 }
 
+
+
 // - - - - - - - - - - - - - – Global Styles - - - - - - - - - - - - - - - //
 
-* { outline: 0; }
+body {margin: 20px;}
+
+* { outline: 0; text-shadow:none; box-shadow: none; 
+
+font-weight: normal;
+font-style: normal;
+
+}
 
 // Header
 
@@ -119,8 +133,8 @@ a { color: $blue; @include transition(all 0.2s ease-in-out);
 .logo {
   background-image: url("../img/low-res/logo.png");
   background-image: url("../img/logo.svg"), none;
-  width: 140px;
-  height: 30px;
+  width: 150px;
+  height: 35px;
   text-indent: 3000px;
   overflow: hidden;
 }
@@ -176,6 +190,7 @@ section {
   margin-bottom: 30px;
   p {
     margin-top: 10px;
+    font-size: 15px;
   }
 }
 
@@ -199,7 +214,7 @@ h2, h3 {
   margin-top: 24px;
   margin-bottom: 48px;
   h3 {
-    font-size: 22px;
+    font-size: 32px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -216,6 +231,9 @@ h2, h3 {
     font-size: 14px;
     line-height: 22px;
   }
+
+h3 { line-height: 36px;}
+
 }
 
 // clients
@@ -281,9 +299,10 @@ margin-left: -2px;
 
 h1, h2, h3, .bold {
   font-family: 'bauexportregular';
-  -webkit-font-smoothing: antialiased;
-  font-weight: weight;
+  font-weight: normal;
   text-transform: lowercase;
+  text-rendering: optimizelegibility;
+
 }
 
 
@@ -320,9 +339,16 @@ p {
 }
 
 .large-type {
-  font-size: 32px;
-  line-height: 38px;
+    font-family: $headingsFontFamily;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.01em;
   padding-bottom: 12px;
+  text-shadow:0px;
+  box-shadow: 0px;
+  text-rendering: optimizelegibility;
+
+
 }
 
 // Lists
@@ -351,6 +377,7 @@ aside.tips {
 
 h2 {
   color: $gray;
+  font-size: 36px;
 }
 
 h3 {
@@ -391,7 +418,7 @@ hr.blue-dashed {
 
 .border-top {
   border-top: solid 1px $blue;
-  margin-left: 30px;
+  margin-left: 20px;
   display: block;
   margin-bottom: 8px;
 }
@@ -495,7 +522,7 @@ background-color: $green;
 .clients {
   display: block;
   @include transition(all 0.2s ease-in-out);
-  &:hover {
+
 
 .arrow:after {
       @include sprite-after;
@@ -507,37 +534,36 @@ background-color: $green;
       @include sprite-hover;
     }
 
-    @include transition(all 0.2s ease-in-out);
     h3, p, .client-title {
       color: $blue;
-      @include transition(all 0.2s ease-in-out);
     }
     .bold {
       color: $black;
     }
     .initials {
       background-color: $blue;
-      @include transition(all 0.2s ease-in-out);
+
     }
     p.services {
       color: $black;
-      @include transition(all 0.2s ease-in-out);
+  
     }
   }
-  h3, p, .client-title, .bold {
-    color: $gray;
-    @include transition(all 0.2s ease-in-out);
+  h3, .client-title, .bold {
+    color: $blue;
+ 
   }
 
 
 
-}
+  
 
 
   .arrow {
     @include sprite;
     width: 30px;
     height: 30px;
+    background-position: 0px -32px;
     background-image: url("../img/low-res/arrow.png");
     background-image: url("../img/arrow.svg"), none;
     overflow: hidden; 
@@ -612,10 +638,22 @@ background-color: $green;
 
 
 .sectors {
-margin-top: 100px;
+margin-top: 60px;
 }
 
 .overlay a {color:$white; }
 .overlay a:hover {color: $blueDark; }
+
+
+.clients-height {
+min-height: 450px;
+}
+
+.black {color: #000;}
+
+// Changes from rory
+
+.read-more { font-size: 15px; letter-spacing: 0.5px;}
+
 
 
