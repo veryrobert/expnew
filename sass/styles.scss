@@ -161,6 +161,7 @@ header {
   }
   h3 {
     margin-top: 7px;
+
   }
 }
 
@@ -306,8 +307,9 @@ h1, h2, h3, .bold {
 
 
 h3 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: normal;
 }
 
 footer {
@@ -654,6 +656,7 @@ min-height: 400px;
 // Changes from rory
 
 .read-more { font-size: 15px; letter-spacing: 0.5px;}
+
 
 
 
