@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
         // autoplay options go gere
         enabled: true,
         pauseOnHover: false,
-        delay:6000,
+        delay:7000,
       },
            block: {
             // animated blocks options go gere
